@@ -1,15 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <title>light_dark-mode</title>
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Script -->
+    <!-- dark mode switch -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">light mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+
+    <!-- navigation -->
+    <nav id="nav">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+
+    <!-- home section -->
+    <section id="home">
+        <div class="title-group">
+            <h1>custom title here</h1>
+            <h2>welcome to the webseite!</h2>
+        </div>
+
+    </section>
+
+    <!--about section  -->
+    <section id="about">
+        <h1>undraw illustrations</h1>
+        <div class="about-container">
+            <!-- img one -->
+            <div class="image-container">
+                <h2>web innovation</h2>
+                <img src="images/undraw_proud_coder_light.svg" alt="proud coder" id="image1">
+            </div>
+            <!-- img two -->
+            <div class="image-container">
+                <h2>problem solving</h2>
+                <img src="images/undraw_feeling_proud_light.svg" alt="feeling proud" id="image2">
+            </div>
+            <!-- image three -->
+            <div class="image-container">
+                <h2>high concept</h2>
+                <img src="images/undraw_conceptual_idea_light.svg" alt="conceptual idea" id="image3">
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects">
+        <h1>buttons</h1>
+        <div class="buttons">
+            <button class="primary">primary</button>
+            <button class="secondary">secondary</button>
+            <button class="primary" disabled>disabled</button>
+            <button class="outline">outline</button>
+            <button class="secondary outline">alt outline</button>
+            <button class="outline" disabled>disabled</button>
+        </div>
+
+        <div class="text-box" id="text-box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vel eligendi alias voluptatum hic magni
+                molestias sapiente obcaecati illo voluptatem veritatis nulla quae, natus facere voluptates eos dolorum
+                dolores blanditiis.
+            </p>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+        <div class="social-icons">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-codepen"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-medium"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+
+    </section>
+
+    <!-- script -->
     <script src="script.js"></script>
 </body>
+
 </html>
